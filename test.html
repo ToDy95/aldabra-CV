@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+    font-family: 'Poppins-Regular';
+    src: url(fonts/Poppins-Regular.ttf);
+  }
+  body {
+    font-family: 'Poppins-Regular';
+    background: #1F2E35;  
+}
+  .primaSectiune {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .title{
+    font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+/* or 150% */
+
+
+color: #FFFFFF;
+
+  }
+  .text {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+
+color: #FFFFFF;
+
+  }
+  .btn {
+    background: #02897A;
+    border-radius: 4px;
+    width: 100px;
+    color: white;
+    margin-right: 20px;
+    height: 50px;
+text-align: center;
+  }
+  .watch{
+    font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #02897A;
+  }
+  .btns {
+    display: flex;
+    flex-direction: row;
+  }
+  .b img {
+    width: 600px;
+height: 313.43px;
+  }
+  @media (min-width: 375px) and (max-width: 550px){
+    .primaSectiune, .adouaSectiune, .atreiaSectiune {
+        display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+  }
+
+</style>
+<body>
+ 
+        <div class="primaSectiune">
+            <div class="a">
+                <div class="title">Work at the speed
+                    of thought</div>
+                    <div class="text">
+                        Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
+                    </div>
+                    <div class="btns">
+                    <div class="btn">Buton</div>
+                    <div class="watch">Vezi =></div>
+                </div>
+            </div>
+        
+            <div class="b">
+                <img src="./amico.svg" />
+            </div>
+        </div>
+   
+    
+</body>
+</html>

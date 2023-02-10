@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(fonts/Poppins-Regular.ttf);
+  }
+  
+body {
+    font-family: 'Poppins-Regular';
+    letter-spacing: 2px;
+    padding: 0;
+    margin:0;
+}
+.container {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.firstSection{
+color: #fff;
+background-image: linear-gradient(to right, #3184be, rgb(211, 211, 211));
+font-size: 18px;
+line-height: 1.2;
+max-width: 400px;
+}
+.profilePicture {
+    margin: 30px;
+}
+.profilePicture img {
+    width: 300px;
+    height: auto;
+    border-radius: 200px;
+    border:3px white solid
+}
+.personalDetails div img{
+    height: 30px;
+    margin: 0 20px 0 20px;
+}
+.nameLine, .adressLine, .phoneLine, .emailLine, .drivingLine, .socialLine {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 0;
+}
+
+
+.personalDetails h3, .interest h3, .languages h3 {
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.interest .firstLine li {
+    list-style-type: "🤯";
+}
+
+.secondSection {
+    background-image: linear-gradient(to right, rgb(211, 211, 211), #fff);
+padding: 20px
+
+}
+.languages .firstLine {
+    display: flex;
+    flex-direction: column;
+}
+.languages .firstLine div {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 20px;
+   
+}
+.experience, .education, .skills, .reference {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+    gap: 5rem;
+}
+.experience .expDates, .education .educDates {
+    min-width: 200px;
+}
+
+
+@media (min-width:320px) and (max-width:680px) {
+    .container {
+        flex-direction: column;
+    }
+    .firstSection {
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(#3184be, rgb(211, 211, 211));
+    }
+    .secondSection {
+        background: linear-gradient( rgb(211, 211, 211), #fff);
+
+    }
+    .secondSection {
+        font-size: 18px;
+    }
+    .experience, .education, .reference {
+        flex-direction: column;
+        gap:2rem;
+    }
+    .skills {
+        flex-direction: row;
+        display: flex;
+        gap:2rem;
+    }
+    .expDates, .educDates {
+        font-size: 24px;
+    }
+}
+@media (min-width:680px) and (max-width:768px) {
+    .secondSection {
+        font-size: 18px;
+    }
+    .experience, .education, .reference {
+        flex-direction: column;
+        gap:2rem;
+    }
+    .skills {
+        flex-direction: row;
+        display: flex;
+        gap:2rem;
+    }
+    .expDates, .educDates {
+        font-size: 24px;
+    }
+}
